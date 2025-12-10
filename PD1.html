@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaiši Violetā Lapa</title>
+    <style>
+        /* Vispārējie stili */
+        body {
+            background-color: #E6A9EC; /* Gaiši violets fons */
+            color: black; /* Teksts melns */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Konteiners */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Virsraksts */
+        header h1 {
+            text-align: center;
+            font-size: 4em;
+            font-weight: bold;
+            color: orange; /* Orandžs */
+        }
+
+        /* Formas daļa */
+        .form-section form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .form-section input, .form-section select, .form-section button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-section button {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: darkorange;
+        }
+
+        /* Saraksti */
+        .lists-section h3 {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        /* Tabulas */
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .table-section th, .table-section td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .table-section th {
+            background-color: #f2f2f2;
+        }
+
+        /* Video */
+        .video-section iframe {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        /* Attēls */
+        .image-section img {
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Hipersaites */
+        .bio-section a {
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .bio-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Virsraksts -->
+        <header>
+            <h1>Kaķis</h1>
+        </header>
+
+        <!-- Formas daļa -->
+        <section class="form-section">
+            <h2>Reģistrācija</h2>
+            <form action="#" method="POST">
+                <label for="username">Lietotājvārds:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Parole:</label>
+                <input type="password" id="password" name="password" required>
+
+                <fieldset>
+                    <legend>Izvēlieties iecienītākās aktivitātes:</legend>
+                    <input type="checkbox" id="climbing" name="activities" value="Climbing">
+                    <label for="climbing">Kāpšana</label><br>
+                    <input type="checkbox" id="sleeping" name="activities" value="Sleeping">
+                    <label for="sleeping">Gulēšana</label><br>
+                    <input type="checkbox" id="playing" name="activities" value="Playing">
+                    <label for="playing">Spēlēšanās</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Izvēlieties dzimumu:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Vīrietis</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Sieviete</label>
+                </fieldset>
+
+                <label for="food">Izvēlies savu iecienītāko kaķu ēdienu:</label>
+                <select id="food" name="food">
+                    <option value="fish">Zivis</option>
+                    <option value="meat">Gaļa</option>
+                    <option value="milk">Piens</option>
+                </select>
+
+                <button type="submit">Nosūtīt</button>
+            </form>
+        </section>
+
+        <!-- Saraksts par kaķiem -->
+        <section class="lists-section">
+            <h2>Ko kaķis ēd un ko nēd</h2>
+            <div class="list-container">
+                <h3>Ko kaķis ēd:</h3>
+                <ul>
+                    <li><em style="color: green;">Zivis</em></li>
+                    <li><em style="color: green;">Gaļa</em></li>
+                    <li><em style="color: green;">Piens</em></li>
+                </ul>
+
+                <h3>Ko kaķis nēd:</h3>
+                <ul>
+                    <li><em style="color: red;">Šokolāde</em></li>
+                    <li><em style="color: red;">Citrusi</em></li>
+                    <li><em style="color: red;">Sāls</em></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tabula -->
+        <section class="table-section">
+            <h2>Kaķa ikdienas aktivitātes</h2>
+            <table>
+                <tr>
+                    <th>Laiks</th>
+                    <th>Aktivitāte</th>
+                </tr>
+                <tr>
+                    <td>8:00</td>
+                    <td>Broks</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>Spēlēšanās</td>
+                </tr>
+                <tr>
+                    <td>18:00</td>
+                    <td>Gulēšana</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Video -->
+        <section class="video-section">
+            <h2>Kaķis Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3URtTIdnXIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- Attēls -->
+        <section class="image-section">
+            <h2>Kaķa attēls</h2>
+            <img src="michael-sum-LEpfefQf4rU-unsplash.webp" alt="Kaķis" width="300">
+        </section>
+
+        <!-- Hipersaiti -->
+        <section class="bio-section">
+            <h2><a href="https://lv.wikipedia.org/wiki/Kaķis" target="_blank">Kaķu biogrāfija</a></h2>
+        </section>
+    </div>
+</body>
+</html>
